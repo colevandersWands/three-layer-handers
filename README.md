@@ -48,6 +48,11 @@ In this repository you will find an HTML file, and 3 files called "handler".  Yo
 
 ## Resources
 
+__Examples to Study__:
+* [arithmetic coercion table](https://github.com/janke-learning/arithmetic-coercion/blob/master/tabling/handler.js)
+* [equalities coercion table](https://github.com/janke-learning/equalities-coercion/blob/master/tabling/handler.js)
+* [_display\_results_](https://github.com/janke-learning/stateless-demo-project/blob/master/9-guess-it.js)  
+* [_guess\_it_](https://github.com/janke-learning/statefull-project-demo/blob/master/13-guess-it.js)  
 
 __Separation of Concerns__:  
 * [Stackexchange Question](https://softwareengineering.stackexchange.com/questions/32581/how-do-you-explain-separation-of-concerns-to-others) - upvote: dleufer
