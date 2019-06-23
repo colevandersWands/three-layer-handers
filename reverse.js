@@ -2,7 +2,7 @@ function reverse_string(str) {
   return str;
 }
 
-function reverse_it() {                                      
+function reverse_handler() {                                      
                      
   // read and process user input
   var to_reverse = document.getElementById('to-reverse').value;        
