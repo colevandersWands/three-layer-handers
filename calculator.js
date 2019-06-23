@@ -17,8 +17,8 @@ function add_handler() {
   var second = document.getElementById('second-number').value;        
  
   var nummed = to_numbers(first, second);
-  console.assert(typeof nummed[0] === "number", 'fix to_numbers!');
-  console.assert(typeof nummed[1] === "number", 'fix to_numbers!');
+  console.assert(typeof nummed[0] === "number", 'first isn\'t a number,fix to_numbers!');
+  console.assert(typeof nummed[1] === "number", 'second isn\'t a number,fix to_numbers!');
 
   // pass user input through core logic
   var result = add(nummed[0], nummed[1]); 
@@ -40,8 +40,8 @@ function subtract_handler() {
   var second = document.getElementById('second-number').value;        
   
   var nummed = to_numbers(first, second);
-  console.assert(typeof nummed[0] === "number", 'fix to_numbers!');
-  console.assert(typeof nummed[1] === "number", 'fix to_numbers!');
+  console.assert(typeof nummed[0] === "number", 'first isn\'t a number,fix to_numbers!');
+  console.assert(typeof nummed[1] === "number", 'second isn\'t a number,fix to_numbers!');
 
   // pass user input through core logic
   var result = subtract(nummed[0], nummed[1]); 
@@ -63,8 +63,8 @@ function multiply_handler() {
   var second = document.getElementById('second-number').value;
   
   var nummed = to_numbers(first, second);
-  console.assert(typeof nummed[0] === "number", 'fix to_numbers!');
-  console.assert(typeof nummed[1] === "number", 'fix to_numbers!');
+  console.assert(typeof nummed[0] === "number", 'first isn\'t a number,fix to_numbers!');
+  console.assert(typeof nummed[1] === "number", 'second isn\'t a number,fix to_numbers!');
 
   // pass user input through core logic
   var result = multiply(nummed[0], nummed[1]); 
@@ -86,8 +86,8 @@ function divide_handler() {
   var second = document.getElementById('second-number').value;      
   
   var nummed = to_numbers(first, second);
-  console.assert(typeof nummed[0] === "number", 'fix to_numbers!');
-  console.assert(typeof nummed[1] === "number", 'fix to_numbers!');
+  console.assert(typeof nummed[0] === "number", 'first isn\'t a number,fix to_numbers!');
+  console.assert(typeof nummed[1] === "number", 'second isn\'t a number,fix to_numbers!');
 
   // pass user input through core logic
   var result = multiply(nummed[0], nummed[1]); 
