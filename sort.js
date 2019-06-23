@@ -1,4 +1,4 @@
-funciton sort_charecters(str) {
+function sort_charecters(str) {
   return str;
 }
 
