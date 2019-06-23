@@ -1,3 +1,7 @@
+function reverse_string(str) {
+  return str;
+}
+
 function reverse_it() {                                      
                      
   // read and process user input
@@ -5,9 +9,9 @@ function reverse_it() {
                                  
   // pass user input through core logic
   
-  /* write a script to reverse a string */
+  /* call your logic function to reverse a string */
   /* assign the result to a variable named 'reversed' */
-  var reversed = to_reverse // place-holder, delete this and start over
+  var reversed = reverse_string(to_reverse);
 
 
   // report result to user
