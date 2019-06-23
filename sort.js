@@ -1,13 +1,17 @@
-function sort_it() {                                      
+funciton sort_charecters(str) {
+  return str;
+}
+
+function sort_handler() {                                      
                                                            
   // read and process user input
   var to_sort = document.getElementById('to-sort').value;        
 
   // pass user input through core logic
   
-  /* write a script to sort a string */
+  /* write a logic function to sort charecters in a string */
   /* assign the result to a variable named 'sorted' */
-  var sorted = to_sort // place-holder, delete this and start over
+  var sorted = sort_charecters(to_sort);
 
   // report result to user
   var output_field = document.getElementById('sorted');
