@@ -1,54 +1,58 @@
 // ---- casting function ----
-function to_numbers(a, b) {
-  // what should happen if either one casts to NaN?
+function to_number(a) {
+  // write a function that casts a string to a numbers
+  // what should happen if it casts to NaN, an error?
   // you decide!
-  return [a, b]; 
+  return a;
 }
 
 // ---- add -----
 
 function add(a, b) {
-  return  "the sum of " + a + ' and ' + b;
+  // write me!
+  return "the sum of " + a + ' and ' + b;
 }
 
 function add_handler() {
   // read and process user input
-  var first = document.getElementById('first-number').value;        
-  var second = document.getElementById('second-number').value;        
- 
-  var nummed = to_numbers(first, second);
-  console.assert(typeof nummed[0] === "number", 'fix to_numbers!');
-  console.assert(typeof nummed[1] === "number", 'fix to_numbers!');
+  const first = document.getElementById('first-number').value;
+  const first_num = to_number(first);
+  console.assert(typeof first_num === "number", 'first isn\'t a number, fix to_number!');
+
+  const second = document.getElementById('second-number').value;
+  const second_num = to_number(second);
+  console.assert(typeof second_num === "number", 'second isn\'t a number, fix to_number!');
 
   // pass user input through core logic
-  var result = add(nummed[0], nummed[1]); 
+  const result = add(first_num, second_num);
 
   // report result to user
-  var output_field = document.getElementById('result');
+  const output_field = document.getElementById('result');
   output_field.innerHTML = result;
 }
 
 // ---- subtract ----
 
 function subtract(a, b) {
-  return "the difference between " + a + ' and ' + b; 
+  return "the difference between " + a + ' and ' + b;
 }
 
 function subtract_handler() {
   // read and process user input
-  var first = document.getElementById('first-number').value;        
-  var second = document.getElementById('second-number').value;        
-  
-  var nummed = to_numbers(first, second);
-  console.assert(typeof nummed[0] === "number", 'fix to_numbers!');
-  console.assert(typeof nummed[1] === "number", 'fix to_numbers!');
+  const first = document.getElementById('first-number').value;
+  const first_num = to_number(first);
+  console.assert(typeof first_num === "number", 'first isn\'t a number, fix to_number!');
+
+  const second = document.getElementById('second-number').value;
+  const second_num = to_number(second);
+  console.assert(typeof second_num === "number", 'second isn\'t a number, fix to_number!');
 
   // pass user input through core logic
-  var result = subtract(nummed[0], nummed[1]); 
+  const result = subtract(first_num, second_num);
 
   // report result to user
-  var output_field = document.getElementById('result');
-  output_field.innerHTML = result; 
+  const output_field = document.getElementById('result');
+  output_field.innerHTML = result;
 }
 
 // ---- multiply ---
@@ -59,40 +63,42 @@ function multiply(a, b) {
 
 function multiply_handler() {
   // read and process user input
-  var first = document.getElementById('first-number').value;        
-  var second = document.getElementById('second-number').value;
-  
-  var nummed = to_numbers(first, second);
-  console.assert(typeof nummed[0] === "number", 'fix to_numbers!');
-  console.assert(typeof nummed[1] === "number", 'fix to_numbers!');
+  const first = document.getElementById('first-number').value;
+  const first_num = to_number(first);
+  console.assert(typeof first_num === "number", 'first isn\'t a number, fix to_number!');
+
+  const second = document.getElementById('second-number').value;
+  const second_num = to_number(second);
+  console.assert(typeof second_num === "number", 'second isn\'t a number, fix to_number!');
 
   // pass user input through core logic
-  var result = multiply(nummed[0], nummed[1]); 
+  const result = multiply(first_num, second_num);
 
   // report result to user
-  var output_field = document.getElementById('result');
-  output_field.innerHTML = result; 
+  const output_field = document.getElementById('result');
+  output_field.innerHTML = result;
 }
 
 // --- divide ---
 
 function divide(a, b) {
-  return  "the quotient of " + a + ' and ' + b; 
+  return "the quotient of " + a + ' and ' + b;
 }
 
 function divide_handler() {
-   // read and process user input
-  var first = document.getElementById('first-number').value;        
-  var second = document.getElementById('second-number').value;      
-  
-  var nummed = to_numbers(first, second);
-  console.assert(typeof nummed[0] === "number", 'fix to_numbers!');
-  console.assert(typeof nummed[1] === "number", 'fix to_numbers!');
+  // read and process user input
+  const first = document.getElementById('first-number').value;
+  const first_num = to_number(first);
+  console.assert(typeof first_num === "number", 'first isn\'t a number, fix to_number!');
+
+  const second = document.getElementById('second-number').value;
+  const second_num = to_number(second);
+  console.assert(typeof second_num === "number", 'second isn\'t a number, fix to_number!');
 
   // pass user input through core logic
-  var result = multiply(nummed[0], nummed[1]); 
+  const result = divide(first_num, second_num);
 
   // report result to user
-  var output_field = document.getElementById('result');
+  const output_field = document.getElementById('result');
   output_field.innerHTML = result;
 }
