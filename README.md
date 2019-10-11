@@ -7,7 +7,7 @@ This project is designed to illustrate one of, if not __the most__, fundamental 
 "Separation of concerns" means that each piece of code has one simple and well defined purpose, and that only one piece of code is used for each role.  In this project you will be exploring the separation of UI framework, input handling, and application logic.  You will build the functions for a basic calculator then connect those functions to a basic UI using structured _handler_ functions.  The concerns are:
 * UI - HTML & the DOM
 * Handler - reads from the UI, calls the logic, writes to the UI
-* Logic - the cleancalc object
+* Logic - plain JavaScript functions & tests
 
 Understanding this principle will help with testing, development scheduling, collaboration, maintenance, ... __everything__. In our experience, understanding separation of concerns is the most important thing a new programmer can learn (after mastering JS of course).  Far more important than learning new libraries, powerful devtools, or even being good at solving programming challenges.  
 
